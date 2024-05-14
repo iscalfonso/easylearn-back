@@ -396,3 +396,9 @@ FodyWeavers.xsd
 
 # JetBrains Rider
 *.sln.iml
+.DS_Store
+.idea/
+easylearn-back.iml
+proyecto.unir.iml
+application.properties
+target
