@@ -27,7 +27,7 @@ public class UserController {
         return service.edit(user);
     }
 
-    @PostMapping("/{id}")
+    @DeleteMapping("/{id}")
     public ResponseDto<User> delete(@PathVariable Long id){
         return service.delete(id);
     }

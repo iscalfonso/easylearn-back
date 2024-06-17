@@ -25,7 +25,7 @@ public class ImageController {
     }
 
     @DeleteMapping("/{id}")
-    public ResponseDto<Image> save(Long id){
+    public ResponseDto<Image> delete(Long id){
         return service.delete(id);
     }
 }

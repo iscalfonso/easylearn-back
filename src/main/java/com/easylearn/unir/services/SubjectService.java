@@ -6,6 +6,6 @@ import com.easylearn.unir.dao.entity.Subject;
 import java.util.List;
 
 public interface SubjectService {
-//    ResponseDto<List<Subject>> getByTeacher(Long id);
+    ResponseDto<List<Subject>> getByTeacher(Long id);
     ResponseDto<Subject> getById(Long id);
 }

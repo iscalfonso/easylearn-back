@@ -24,6 +24,11 @@ public class PostController {
         return service.getByTeacher(id);
     }
 
+    @GetMapping("students/{id}")
+    public ResponseDto<List<Post>> getByStudent(@PathVariable Long id){
+        return service.getByStudent(id);
+    }
+
     @GetMapping("/{id}")
     public ResponseDto<Post> getById(@PathVariable Long id){
         return service.getById(id);
@@ -34,7 +39,7 @@ public class PostController {
         return service.edit(post);
     }
 
-    @PostMapping("/{id}")
+    @PutMapping("/{id}")
     public ResponseDto<Post> disable(@PathVariable Long id){
         return service.disable(id);
     }

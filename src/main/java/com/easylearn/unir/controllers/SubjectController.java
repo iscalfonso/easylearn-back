@@ -17,10 +17,10 @@ import java.util.List;
 public class SubjectController {
     private final SubjectService service;
 
-    /*@GetMapping("teachers/{id}")
+    @GetMapping("teachers/{id}")
     public ResponseDto<List<Subject>> getByTeacher(@PathVariable Long id){
         return service.getByTeacher(id);
-    }*/
+    }
 
     @GetMapping("/{id}")
     public ResponseDto<Subject> getById(@PathVariable Long id){

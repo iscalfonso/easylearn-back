@@ -15,7 +15,6 @@ import java.util.List;
 @RequiredArgsConstructor
 public class RoleController {
     private final RoleService service;
-
     @GetMapping
     public ResponseDto<List<Role>> getAll(){
         return service.getAll();

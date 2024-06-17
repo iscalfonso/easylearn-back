@@ -13,10 +13,10 @@ import java.util.List;
 @RequiredArgsConstructor
 public class SubjectServiceImpl implements SubjectService {
     private final SubjectRepository repository;
-    /*@Override
+    @Override
     public ResponseDto<List<Subject>> getByTeacher(Long id) {
-        return new ResponseDto<>(true, repository.findByUser(id));
-    }*/
+        return new ResponseDto<>(true, repository.findByTeacher(id));
+    }
 
     @Override
     public ResponseDto<Subject> getById(Long id) {
