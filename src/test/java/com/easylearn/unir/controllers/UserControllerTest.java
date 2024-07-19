@@ -1,6 +1,5 @@
 package com.easylearn.unir.controllers;
 
-
 import com.easylearn.unir.dao.entity.User;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -34,7 +33,7 @@ class UserControllerTest {
 
     @Test
     void save() throws Exception {
-        User user = new User(null, "Julio", "1111111114", "12345", 1L);
+        User user = new User(null, "Julio", "1111111115", "12345", 1L);
         MvcResult result = mockMvc.perform(MockMvcRequestBuilders.post(BASE_PATH)
                 .accept(MediaType.APPLICATION_JSON_VALUE)
                 .contentType(MediaType.APPLICATION_JSON_VALUE)
@@ -64,7 +63,7 @@ class UserControllerTest {
 
     @Test
     void delete() throws Exception {
-        MvcResult result = mockMvc.perform(MockMvcRequestBuilders.delete(BASE_PATH + "/20")
+        MvcResult result = mockMvc.perform(MockMvcRequestBuilders.delete(BASE_PATH + "/21")
                         .accept(MediaType.APPLICATION_JSON_VALUE))
                 .andReturn();
         assertEquals(200, result.getResponse().getStatus());
