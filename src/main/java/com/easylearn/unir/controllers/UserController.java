@@ -22,6 +22,10 @@ public class UserController {
         return service.findById(id);
     }
 
+    @GetMapping("user/{phone}")
+    public ResponseDto<User> findByPhone(@PathVariable String phone){
+        return service.findPhone(phone);
+    }
     @PutMapping()
     public ResponseDto<User> edit(@RequestBody User user){
         return service.edit(user);

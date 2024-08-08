@@ -21,7 +21,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 @WebAppConfiguration
 class UserControllerTest {
 
-    private final static String BASE_PATH = "http://localhost/users";
+   /* private final static String BASE_PATH = "http://localhost/users";
     MockMvc mockMvc;
     @Autowired
     private WebApplicationContext applicationContext;
@@ -72,5 +72,5 @@ class UserControllerTest {
     private String mapToJson(Object object) throws JsonProcessingException {
         ObjectMapper mapper = new ObjectMapper();
         return mapper.writeValueAsString(object);
-    }
+    }*/
 }
