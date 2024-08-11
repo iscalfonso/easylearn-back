@@ -16,6 +16,7 @@ public class User {
     private String name;
     private String phone;
     private String password;
-    @Column(name = "role_id")
-    private Long role;
+    @ManyToOne(fetch = FetchType.EAGER)
+    @JoinColumn(name = "role_id")
+    private Role role;
 }
